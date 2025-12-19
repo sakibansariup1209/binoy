@@ -6537,49 +6537,49 @@ function generateSchema() {
 // Call generator on load
 generateSchema();
 
-// // 1. Disable Right Click
-// document.addEventListener('contextmenu', (e) => {
-//     e.preventDefault();
-// });
+// 1. Disable Right Click
+document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+});
 
-// // 2. Block Keyboard Shortcuts
-// document.onkeydown = function (e) {
-//     // F12
-//     if (e.keyCode == 123) {
-//         return false;
-//     }
+// 2. Block Keyboard Shortcuts
+document.onkeydown = function (e) {
+    // F12
+    if (e.keyCode == 123) {
+        return false;
+    }
 
-//     // Checks for CTRL + SHIFT combos
-//     if (e.ctrlKey && e.shiftKey) {
-//         // I (Inspect)
-//         if (e.keyCode == 'I'.charCodeAt(0)) return false;
-//         // J (Console)
-//         if (e.keyCode == 'J'.charCodeAt(0)) return false;
-//         // C (Element Inspector) - ADDED THIS
-//         if (e.keyCode == 'C'.charCodeAt(0)) return false;
-//     }
+    // Checks for CTRL + SHIFT combos
+    if (e.ctrlKey && e.shiftKey) {
+        // I (Inspect)
+        if (e.keyCode == 'I'.charCodeAt(0)) return false;
+        // J (Console)
+        if (e.keyCode == 'J'.charCodeAt(0)) return false;
+        // C (Element Inspector) - ADDED THIS
+        if (e.keyCode == 'C'.charCodeAt(0)) return false;
+    }
 
-//     // Checks for CTRL combos
-//     if (e.ctrlKey) {
-//         // U (View Source)
-//         if (e.keyCode == 'U'.charCodeAt(0)) return false;
-//         // S (Save Page) - Often used to steal code
-//         if (e.keyCode == 'S'.charCodeAt(0)) {
-//             e.preventDefault();
-//             return false;
-//         }
-//     }
-// };
+    // Checks for CTRL combos
+    if (e.ctrlKey) {
+        // U (View Source)
+        if (e.keyCode == 'U'.charCodeAt(0)) return false;
+        // S (Save Page) - Often used to steal code
+        if (e.keyCode == 'S'.charCodeAt(0)) {
+            e.preventDefault();
+            return false;
+        }
+    }
+};
 
-// // 3. The "Debugger Trap"
-// // If the developer tools are open, this will constantly pause execution
-// // making the inspector annoying to use. It usually does nothing if tools are closed.
-// setInterval(function () {
-//     debugger;
-// }, 100);
+// 3. The "Debugger Trap"
+// If the developer tools are open, this will constantly pause execution
+// making the inspector annoying to use. It usually does nothing if tools are closed.
+setInterval(function () {
+    debugger;
+}, 100);
 
-// // 4. Console Clearing
-// // Tries to clear the console if they open it
-// // console.clear(); 
+// 4. Console Clearing
+// Tries to clear the console if they open it
+// console.clear(); 
 
-// document.addEventListener("contextmenu", e => e.preventDefault()); document.onkeydown = function (e) { if (123 == e.keyCode) return !1; if (e.ctrlKey && e.shiftKey) { var t = e.keyCode; if (t == "I".charCodeAt(0) || t == "J".charCodeAt(0) || t == "C".charCodeAt(0)) return !1 } if (e.ctrlKey) { var n = e.keyCode; if (n == "U".charCodeAt(0) || n == "S".charCodeAt(0)) return e.preventDefault(), !1 } }; setInterval(function () { debugger }, 100);
+document.addEventListener("contextmenu", e => e.preventDefault()); document.onkeydown = function (e) { if (123 == e.keyCode) return !1; if (e.ctrlKey && e.shiftKey) { var t = e.keyCode; if (t == "I".charCodeAt(0) || t == "J".charCodeAt(0) || t == "C".charCodeAt(0)) return !1 } if (e.ctrlKey) { var n = e.keyCode; if (n == "U".charCodeAt(0) || n == "S".charCodeAt(0)) return e.preventDefault(), !1 } }; setInterval(function () { debugger }, 100);
