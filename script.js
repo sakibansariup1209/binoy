@@ -16,7 +16,7 @@ const moviesData = [
     // 1. RECENT ADDS / RECENT ADDS / RECENT ADDS / RECENT 
     // =======================================================================
     {
-        title: "Thamma (2025)",
+        title: "Thamma (2025.)",
         embedUrl: "https://short.icu/N5--Hm5o6",
         posterUrl: "https://resizing.flixster.com/bQ1o4xY_6v4jeDznUhtllyagbCA=/fit-in/705x460/v2/https://resizing.flixster.com/VPTlxhzmIrSLqcudRvrP7BIPpNg=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2I5NTkxNWU3LWFjM2YtNDQzYi05OGZmLWM0ZThhNmJkY2ExMC5qcGc=",
         genre: "Horror, Comedy, Fantasy, Mystery, Thriller, Romance",
