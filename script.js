@@ -29,7 +29,7 @@ const moviesData = [
         title: "Son of Sardaar 2 (2025)",
         embedUrl: "https://short.icu/Ina5GjqG_",
         posterUrl: "https://resizing.flixster.com/4hr71N5QvQ2MjW7fg96DeXhPNNk=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p30708270_v_v13_aa.jpg",
-        genre: "Comedy, Drama, Romance",
+        genre: "Comedy, Drama",
         category: "Recent Adds",
         language: "Hindi",
         downloadUrl1: "https://www.effectivegatecpm.com/hgmyx7gfb7?key=9666ff87a79cf1b9367c6b738276f7e4",
